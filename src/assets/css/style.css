@@ -1,0 +1,130 @@
+body {
+    background: linear-gradient(135deg, orangered,black,orangered)
+}
+
+.navbar {
+    /* background-color: inherit; */
+     padding: 15px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    /* background: transparent; */
+}
+
+.navbar-brand {
+    font-size: 27px;
+    color: white;
+}
+
+.nav-link {
+    color: white !important;
+    font-size: 19px;
+}
+
+.talk-btn {
+    background-color: orangered;
+    color: white;
+    padding: 15px 30px;
+    font-size: 19px;
+    border: none;
+}
+.hero {
+    min-height: calc(100vh - 90px);
+    /* overflow: hidden; */
+     position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    padding-top: 120px;
+}
+.hero-container {
+    min-height: calc(100vh - 90px);
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: azure;
+}
+.hero-content h1 {
+    font-size: clamp(45px, 5vw, 85px);
+    line-height: 1.15;
+    letter-spacing: -3px;
+}
+.hero-content h1 span {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-weight: bold;
+}
+.hero-description {
+    max-width: 600px;
+    font-size: 20px;
+    line-height: 1.6;
+}
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 45px;
+    
+}
+.hero-buttons a{
+    background: #ed4423;
+    border: 1px solid black;
+}
+.hero-buttons .explore-link{
+    background-color: inherit;
+    text-decoration: none;
+    color: azure;
+}
+.hero {
+    position: relative;
+    min-height: calc(100vh - 90px);
+    overflow: hidden;
+}
+
+.hero-image {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.hero-image img {
+    position: absolute;
+    bottom: 0;
+    right: -80px;
+
+    height: 95vh;
+    width: auto;
+    max-width: none;
+
+    object-fit: contain;
+    object-position: bottom;
+}
+.hero {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-container {
+    min-height: 90vh;
+}
+.hero-image img {
+    transform: scale(1.25);
+    transform-origin: bottom right;
+}
+@media (max-width:992px) {
+.talk-btn{
+    display: none;
+}
+.navbar{
+background-color: rgba(0,0,0,0.85);
+
+}
+    
+}
