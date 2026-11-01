@@ -3,14 +3,14 @@ body {
 }
 
 .navbar {
-    /* background-color: inherit; */
+  
      padding: 15px 0;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
-    /* background: transparent; */
+  
 }
 
 .navbar-brand {
@@ -189,10 +189,190 @@ body {
 .about{
     color: #ed4423;
 }
-.card{
-    background: #ed4423;
-    color: azure;
+
+.project-section {
+    background: black;
 }
+
+.card {
+    background: linear-gradient(135deg, #ed4423, black, #ed4423);
+    color: azure;
+    border: 1px solid transparent;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2),
+                -3px -3px 5px rgba(10, 0, 0, 0.8);
+
+    transition: border-color 180ms ease,
+                background-color 180ms ease,
+                transform 180ms ease,
+                box-shadow 180ms ease;
+}
+
+.card:hover {
+    background-color: #29343d;
+    border: 1px solid orange;
+    transform: translateY(-5px);
+    box-shadow: 3px 5px 12px rgba(237, 68, 35, 0.3);
+}
+
+.card-title a {
+    color: azure;
+    text-decoration: none;
+}
+
+.card-title a:hover {
+    color: orange;
+}
+
+.preview-container {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+}
+
+.preview-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.contact-section {
+    background-color: black;
+    color: white;
+}
+
+
+.contact-form {
+    border: 1px solid orangered;
+    border-radius: 14px;
+    padding: 24px;
+    height: 100%;
+}
+
+.contact-form .form-label {
+    color: white;
+    margin-bottom: 7px;
+}
+
+.contact-form .form-control {
+    background-color: #303139;
+    color: white;
+    border: 1px solid #686575;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+.contact-form .form-control::placeholder {
+    color: #a3a9b5;
+}
+
+.contact-form .form-control:focus {
+    background-color: #303139;
+    color: white;
+    border-color: orangered;
+    box-shadow: 0 0 5px rgba(179, 75, 214, 0.4);
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+
+.send-btn {
+    background-color: orangered;
+    color: white;
+    font-size: 20px;
+    padding: 8px 18px;
+    margin: 5px 0 0 22px;
+    border: 1px solid #b34bd6;
+    border-radius: 9px;
+    transition: 0.3s ease;
+}
+
+.send-btn:hover {
+    background-color: azure;
+    color: orangered;
+    transform: translateY(-3px);
+}
+
+
+.contact-info {
+    border: 1px solid orangered;
+    border-radius: 25px;
+    padding: 55px;
+    min-height: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-intro {
+    color: #a3a9b5;
+    font-size: 18px;
+    margin-bottom: 65px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 45px;
+}
+
+.contact-icon {
+    background-color: #a3a9b5;
+    color: #161a1d;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    flex-shrink: 0;
+}
+
+.contact-item h5 {
+    color: #a3a9b5;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contact-item a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.contact-item a:hover {
+    color: orangered;
+}
+
+
+
+main {
+    position: relative;
+}
+
+
+.hero {
+    min-height: 100vh;
+    position: sticky;
+    top: 0;
+    z-index: 0;
+}
+
+
+.about-section,
+.project-section,
+.contact-section {
+    position: relative;
+    z-index: 1;
+    background-color: #161a1d;
+    min-height: 100vh;
+}
+
 @media (max-width:992px) {
 .talk-btn{
     display: none;
@@ -240,6 +420,13 @@ background-color: rgba(0,0,0,0.85);
         z-index: 3;
         width: 100%;
         padding-top: 80px;
+    }
+    
+    .about-image img{
+        margin-left: 30%;
+        height:40vh;
+        width: auto;
+
     }
        .statistic .border-end {
         border-right: none !important;
