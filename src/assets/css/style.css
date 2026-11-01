@@ -189,6 +189,10 @@ body {
 .about{
     color: #ed4423;
 }
+.card{
+    background: #ed4423;
+    color: azure;
+}
 @media (max-width:992px) {
 .talk-btn{
     display: none;
